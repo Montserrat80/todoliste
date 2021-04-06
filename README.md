@@ -2,7 +2,7 @@
 
 ## Persönliche Listen der zu erledigenden Aufgaben, die nach und nach abgehakt werden. Plus Benutzer und Listen verwaltung für Admins.
 
-* Objektorientierte Programmierung
+* PHP - Objektorientierte Programmierung
 * Datenbank: MariaDB
 
 ![startseite](https://user-images.githubusercontent.com/81353824/113700942-c14b3a80-96d7-11eb-8fb8-27eab56a3064.png)
