@@ -5,5 +5,5 @@
 * Objektorientierte Programmierung
 * Datenbank: MariaDB
 
-![startseite](https://user-images.githubusercontent.com/81353824/113699490-e8087180-96d5-11eb-84c5-802b333baa02.png)
-![registrieren](https://user-images.githubusercontent.com/81353824/113699797-56e5ca80-96d6-11eb-8238-62334d7e0786.png)
+![startseite](https://user-images.githubusercontent.com/81353824/113700942-c14b3a80-96d7-11eb-8fb8-27eab56a3064.png)
+![registrieren](https://user-images.githubusercontent.com/81353824/113700948-c314fe00-96d7-11eb-86d1-cf1e37aadc2a.png)
