@@ -1,0 +1,30 @@
+# BLACKLIST: Erstmal alles sperren
+# Browser-Zugriff verbieten
+<Files *.*>
+	# Apache <= 2.2
+	<IfModule !mod_authz_core.c>
+		Order deny,allow
+		Deny from all
+	</IfModule>
+	# Apache >= 2.3
+	<IfModule mod_authz_core.c>
+		Require all denied
+	</IfModule>
+</Files>
+# WHITELIST: Nach der Komplettsperrung wieder einzeln freigeben
+# Browser-Zugriff selektiv erlauben	
+<FilesMatch "((^$)|(^(index.php|.+\.(js|css|gif|jpe?g|png|zip|pdf))$))">
+	# Apache <= 2.2
+	<IfModule !mod_authz_core.c>
+		Allow from all
+	</IfModule>
+	# Apache >= 2.3
+	<IfModule mod_authz_core.c>
+		Require all granted
+	</IfModule>
+</FilesMatch>
+# UMLEITUNG IMMER AUF DIE INDEX.PHP
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* index.php
+

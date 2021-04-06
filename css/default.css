@@ -1,0 +1,419 @@
+
+/* Standard CSS --------------------------------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box; /* padding und border nach innen verlegen (hi ha browsers que sino no funcionarien el paddings i margins*/
+}
+
+img {
+    max-width: 100%; /*pq la imatge no sigui mai mes gran que l element pare, pero si que pot ser mes petita*/
+    height: auto;
+}
+
+html, body {
+	background-color: #eee;
+	color:#555;
+} 
+
+main{
+    display:block; /* cal posar-ho pq sino el iE11 no reconeix el main com a block !!!*/
+}
+
+input[id*="checker"]{display: none;   }
+label[for]          {cursor:  pointer;} 
+/*----------------------------------------------------------------------------------------------------------*/
+/* type-Selektoren -----------------------------------------------------------------------------------------*/
+
+main{
+	background-color: #ddd;
+	padding: 10px 0;
+}
+
+footer{
+	font: 0.9rem Helvetica,Verdana, sans-serif;
+	background-color: #ccc;
+	border-radius:0 0 30px 30px;
+}
+
+header{
+	background-color: #2aa;
+	color:#ccc;
+	border-radius: 30px 30px 0 0;
+}
+
+h1{
+	text-align:center;
+	padding: 10px 0;
+}
+
+h1:after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 5px;
+    background-color:#ccc;
+}
+
+h2{
+	text-align: center;
+	margin-bottom:30px;
+}
+
+h2 a:hover{
+	background-color: #555;
+}
+
+ul{ 
+	list-style: none;
+}
+
+a{
+	text-decoration: none;	
+}
+
+a:hover{
+	color:#ddd;
+}
+
+button{
+	background-color: #2aa;
+	color: #ddd;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.2rem;
+	width:60px;
+}
+
+button:hover{
+	background-color: #ddd;
+	color: #2aa;
+	font-weight: bold;
+}
+/* Inhalt von oben nach unten-----------------------------------------------------------------------------------------*/
+
+#topnav a:hover,
+footer a:hover{
+	color:#aaa;
+}
+
+/* Main --------------------------------------------*/
+
+#container_flex{
+	height: 530px;
+	margin:0 auto;
+	display: flex;
+	justify-content:center; 
+	padding:40px 0;
+}
+#container_flex > div{
+	flex-basis: 50%;
+}	
+
+#container_flex a:hover{
+	background-color: #2aa;
+}
+
+#container_flex a:hover .symbol{
+	color:#ddd;
+}
+
+#container{
+	height:530px;
+	margin:0 auto;
+	border: 1px solid #2aa;
+	border-radius: 30px 30px 30px 30px;
+	padding:20px 10px;
+	text-align:left;
+	color:#2aa;
+}
+
+#container_list_form{
+	margin:0 auto;
+	padding:15px 0;
+	border: 1px solid #2aa;
+	border-radius: 30px 30px 30px 30px;
+	text-align:left;
+	color:#2aa;
+}
+
+#container_list_form a{
+	color: #2aa;
+}
+
+#container_list_form a:hover{
+	color: #ddd;
+}
+
+.big input[type=text],
+.big input[type=password]{
+  width: 98%;
+  padding: 8px 3px;
+  margin: 4px 0 20px 0;
+  background-color: #eee;
+  box-sizing: border-box;
+  border: 1px solid #2aa;
+  border-radius:5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.klein input[type=text] {
+  width: 50%;
+  padding: 8px 3px;
+  margin: 40px 0 0 10px;
+  color: #555;
+  background-color: #eee;
+  box-sizing: border-box;
+  border: 1px solid #2aa;
+  border-radius:5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.klein2{
+  width: 100%;
+  padding: 0 3px;
+  line-height: 1.5rem;
+  color: #555;
+  background-color: #eee;
+  box-sizing: border-box;
+  border: 1px solid #2aa;
+  border-radius:5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus,
+input[type=password]:focus  {
+  border: 3px solid #2aa;
+}
+
+input[type=submit] {
+  color: #ddd;
+  background-color: #2aa;
+  line-height: 2rem;
+  box-sizing: border-box;
+  border: 1px solid #2aa;
+  border-radius:5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+	color: #2aa;
+	font-weight: bold;
+	background-color: #ccc;
+	border: 1px solid #ccc;
+}
+
+.submit_pos{
+	text-align: right;
+	margin: 2rem 2rem 0 0;
+}
+
+table{
+	width: 95%;
+	border-collapse: collapse;
+	margin-left:10px;
+	text-align: center;
+}
+
+table thead{
+	border-bottom: 3px solid #ccc;
+}
+
+table th{
+	padding:1px 0;
+}
+
+table tbody tr{
+	border-bottom: 1px solid #ccc;	
+}
+
+table tbody tr:hover{
+	background-color: #255;
+}
+
+table td{
+	padding:15px 0;
+}
+
+#previous_next{
+	width: 200px;
+	margin: 1rem auto 0;
+	display:flex;
+}
+#previous_next > p{
+	flex-basis: 50%;
+}
+
+/* freie Klassen -------------------------------------------------------------------------------------------*/
+
+.box{
+	border: 1px solid #2aa;
+	border-radius: 30px 30px 30px 30px;
+	text-align:center;
+	margin: 15px;
+	color:#2aa;
+	display: block;
+}
+
+.symbol{
+	font-size:3rem;
+	padding: 35px 0;
+}
+.zentriert{
+	text-align:center;
+}
+.registrieren{
+	background-color:#aaa;
+	line-height: 2rem;
+	margin-top: 90px;
+	color:#333;
+}
+.meldung{
+	color:#f00;
+	margin-bottom: 15px;
+	background-color: #ccc;
+	text-align: center;
+	line-height: 2rem;
+}
+
+/********************************* style pel checkbox de l apartat anmelden ********************************* /
+ /* Customize the label (the container) */
+ /* Customize the label (the container) */
+.container_chkbox {
+  display: block;
+  position: relative;
+  /*padding-left: 35px;
+  margin-bottom: 12px;*/
+  cursor: pointer;
+  /*font-size: 22px;*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container_chkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  /*left: 50;*/
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  margin-left: 5px
+}
+
+/* On mouse-over, add a grey background color */
+.container_chkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container_chkbox input:checked ~ .checkmark {
+  background-color: #2aa;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container_chkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container_chkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
+#zweispalter > div{ /* nomes repercuteix als divs directes */
+	float: left;
+	width: 30%;
+	margin-bottom: 2rem;
+}
+
+#zweispalter > div:last-of-type{ 
+	float: right;
+}
+
+.clearfix:after{ 
+	content:""; 
+	display:block;
+	clear:both;
+}
+       
+.top_abstand{
+	margin-top: 5rem;
+}
+
+.grosse5{
+	font-size: 7rem;
+}
+
+.font_klein{
+	font-size: 0.8rem;
+	padding: .5rem .5rem; 
+}
+
+.space{
+	margin-left:10px;
+}
+.space_padding{
+	padding: 0 2px;
+}
+
+.space_top{
+	margin-top: 20px; 
+}
+
+.erledigt{
+	text-decoration: line-through;
+}
+
+.zurueck{
+	margin-top:3rem;
+	width: 90px;
+	margin: 4rem auto;
+	color: red;
+	text-align: center;
+}
+
+.zurueck a{
+	display:block;
+	border: 2px solid #2aa;
+	border-radius: 5px;
+	background-color:#ccc;
+	line-height: 1.5rem;
+	color: #2aa;
+}
