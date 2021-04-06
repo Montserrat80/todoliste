@@ -7,6 +7,4 @@
 
 ![startseite](https://user-images.githubusercontent.com/81353824/113700942-c14b3a80-96d7-11eb-8fb8-27eab56a3064.png)
 ![registrieren](https://user-images.githubusercontent.com/81353824/113700948-c314fe00-96d7-11eb-86d1-cf1e37aadc2a.png)
-
-#bla bla bla
-https://github.com/Montserrat80/todoliste/issues/1#issue-851308245
+![registrieren](https://user-images.githubusercontent.com/81353824/113701711-cceb3100-96d8-11eb-8bff-d02d0fd2f703.png)
