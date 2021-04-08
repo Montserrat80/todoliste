@@ -1,6 +1,6 @@
 # ToDo - Listen
 
-## Persönliche Listen der zu erledigenden Aufgaben, die nach und nach abgehakt werden. Plus Benutzer und Listen verwaltung für Admins.
+## Persönliche Listen der zu erledigenden Aufgaben, die nach und nach abgehakt werden. Plus Benutzer und Listenverwaltung für Admins.
 
 * PHP - Objektorientierte Programmierung
 * Datenbank: MariaDB
@@ -13,4 +13,10 @@
 ![listen-edit](https://user-images.githubusercontent.com/81353824/113703963-cf9b5580-96db-11eb-9e73-d219acc43674.png)
 ![aufgaben](https://user-images.githubusercontent.com/81353824/113703405-150b5300-96db-11eb-9222-ca813e3c133c.png)
 ![benutzer](https://user-images.githubusercontent.com/81353824/113704680-c1016e00-96dc-11eb-8f4e-a3bfaffd8e52.png)
+
+## Responsive
+
+![responsive1](https://user-images.githubusercontent.com/81353824/114016483-2c794600-986b-11eb-8f7f-d59762127ff2.png)
+![responsive2](https://user-images.githubusercontent.com/81353824/114016488-2d11dc80-986b-11eb-9407-fc0557546e4d.png)
+
 
